@@ -3049,23 +3049,6 @@ config MSM_SECBOOT
 	bool "MSM Secboot verification driver"
 	help
 	Driver to expose secureboot status
-
-config ALUCARD_HOTPLUG
-        bool "Enable alucard-hotplug cpu hotplug driver"
-        default n
-        help
-          Generic Alucard-hotplug cpu hotplug driver for ARM SOCs
-
-config ASMP 
-        bool "Multi-core automatic hotplug support"
-        depends on SMP
-        default n
-        help
-          Automatically hotplugs the multiple cpu cores on and off
-          based on cpu load and suspend state
-
-
-
 endif
 
 config KERNEL_TEXT_MPU_PROT
